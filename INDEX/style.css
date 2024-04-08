@@ -133,7 +133,7 @@ nav li a:hover {
 }
 
 .banner1 {
-   height: 150vh;
+   /* height: 150vh; */
    background: rgba(255, 160, 122);
    background-size: cover;
    background-position: center;
@@ -163,10 +163,12 @@ nav li a:hover {
 .recuo-primeira-linha {
    text-indent: 20px;
    text-indent: 1.25cm;
-   margin-top: -10px;
+   /* margin-top: -10px;
    margin-right: 250px;
    margin-bottom: 10px;
-   margin-left: 250px;
+   margin-left: 250px; */
+   padding: 0 3rem 1rem 3rem;
+   margin: 0;
 }
 .margens-autor {
    margin-top: 2px;
@@ -241,6 +243,7 @@ h5 {
 }
 
 .texto-sub_titulo1 {
+   margin: 0 2rem;
    color: #000000;
    font-size: 30px;
    font-weight: 600;
@@ -460,6 +463,11 @@ footer a:hover {
    background: rgba(0, 0, 0, 0.5);
    transition: opacity 0.3s;
    cursor: pointer;
+}
+
+.texto_meio {
+   background: rgba(255, 160, 122);
+ 
 }
 
 .texto_meio1 {
@@ -683,6 +691,11 @@ a {
    border-radius: 10%;
 }
 
+.imagem-paginas {
+   width: 90%;
+   height: auto;
+   text-align: center;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -718,6 +731,9 @@ a {
    }
    .navbar-collapse .nav-link {
       font-size: 0.6rem;
+   }
+   .recuo-primeira-linha {
+      padding: 0 10rem 2rem 10rem;
    }
 }
 

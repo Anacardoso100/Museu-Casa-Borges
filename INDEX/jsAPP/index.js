@@ -36,24 +36,6 @@ function loadSessionStorageValues(list) {
 
 $(document).ready(function () {
 
-   $(
-      "#dismiss, .overlay, #btnMainHome, #btnUsuariosOnline, #btnLogErros, #sidebar ul li ul li a"
-   ).on("click", function () {
-      $("#sidebar").removeClass("active");
-      $(".overlay").removeClass("active");
-   });
-
-   $("#sidebarCollapse").on("click", function () {
-      $("#sidebar").addClass("active");
-      $(".overlay").addClass("active");
-      $(".collapse.in").toggleClass("in");
-      $("a[aria-expanded=true]").attr("aria-expanded", "false");
-   });
-
-   $("#imgBrasao").on("click", function (event) {
-      saveNavegation({ page: "index_firstpage.html" });
-   });
-
    $("#logoMuseu").on("click", function (event) {
       saveNavegation({ page: "index_firstpage.html" });
    });
@@ -62,13 +44,13 @@ $(document).ready(function () {
       window.location.replace(window.sessionStorage.getItem("path"));
    });
 
-   $("#btnGerenciarAcesso").on("click", function (event) {
-      saveNavegation({ page: "administrativo/gerenciar_acesso.html" });
+   $("#btnMuseu").on("click", function (event) {
+      saveNavegation({ page: "museu.html" });
    });
 
-   $(document).on("click", ".navbar-collapse", function (e) {
-      if ($(e.target).is('a:not(".dropdown-toggle")')) {
-         $(this).collapse("hide");
-      }
-   });
+   // $(document).on("click", ".navbar-collapse", function (e) {
+   //    if ($(e.target).is('a:not(".dropdown-toggle")')) {
+   //       $(this).collapse("hide");
+   //    }
+   // });
 });
